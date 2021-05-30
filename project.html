@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel='stylesheet' href='css/styles.css' />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="icon" href="img/tab-logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="body">
+        <header class="header-container">
+            <navbar class="navbar-container">
+                <div class="navbar-items1"><a href="index.html"><img src="img/logo.png" alt="Logo"></a></div>
+                <div class="navbar-items2" id="navbar-items2">
+                    <button class="close-button">
+                        <span class="material-icons">close</span>
+                    </button>
+                    <a class="page-links items" href="index.html"><span class="material-icons">home</span>
+                        Home</a>
+                    <a class="page-links items is-active" href="project.html"><span class="material-icons">code</span>
+                        Projects</a>
+                    <a class="page-links items" href="skillset.html"><span class="material-icons">computer</span>
+                        Skills</a>
+                    <a class="page-links items" href="hobbies.html"><span class="material-icons">sports_soccer</span>
+                        Hobbies</a>
+                    <a class="page-links items" href="contact.html"><span class="material-icons">contact_page</span>
+                        Contact</a>
+                        <button class="dark-button"><span class="material-icons">dark_mode</span></button>
+                        <button class="light-button" hidden="hidden"><span class="material-icons">light_mode</span></button> 
+                    </div>
+                <div class="navbar-items3">
+                    <button class="menu-button">
+                        <span class="material-icons">menu</span>
+                    </button>
+                </div>
+            </navbar>
+        </header>
+        <div class="body-container">
+    
+            <main class="content">
+                <!-- You can have section and articles here -->
+                <section class="project-container">
+                    <h4 class="main-header">SOLO & TEAM PROJECTS</h4>
+                    <div class="row">
+                        <div class="column">
+                            <h4 class="project-title">POJAN</h4>
+                            <div class="project-image">
+                                <img src="img/pojan.png" alt="MySQL">
+                            </div>
+                            <div class="project-description">
+                                <ul class="project-keypoints">
+                                    <li>Job Assistantship portal for the NMSU students to explore RA/GA research opportunities</li>
+                                    <li>Department Professors broadcast the vacant postions and students can find it</li>
+                                </ul>
+                                <div class="project-stack">
+                                    <span><b>Technologies - </b>NodeMailer, Twilio API, JavaScript, Node Js, MySQL, PassPort(Login Auth)</span>
+                                </div>
+                                <div class="source-code">
+                                    <a href="https://github.com/chidcrushev/Pojan" target="_blank"><button class="repo">Source Code</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <h4 class="project-title">NASP</h4>
+                            <div class="project-image">
+                                <img src="img/nasp.png" alt="MySQL">
+                            </div>
+                            <div class="project-description">
+                                <ul class="project-keypoints">
+                                    <li>A web app to enable the NMSU students to post and sell their used products</li>
+                                    <li>Other students registered in the portal can bid and the highest bidder takes it</li>
+                                </ul>
+                                <div class="project-stack">
+                                    <span><b>Technologies - </b>JavaScript, Node Js, MongoDB, Express, HandleBars, PassPort(Login Auth)</span>
+                                </div>
+                                <div class="source-code">
+                                    <a href="http://ec2-18-221-54-137.us-east-2.compute.amazonaws.com:2000/" target="_blank"><button class="repo">Hosted URL</button></a>
+                                </div>
+                            </div>
+                        </div>
+                       </div> 
+                       <div class="row">
+                        <div class="column">
+                            <h4 class="project-title">DISEASE PREDICTION - ML</h4>
+                            <div class="project-image">
+                                <!-- image size = 320 * 162 -->
+                                <img src="img/machine-learning.png" alt="MySQL">
+                            </div>
+                            <div class="project-description">
+                                <ul class="project-keypoints">
+                                    <li>Predicted the output for the unseen instances in the Hepatitis C Prediction Dataset</li>
+                                    <li>Improved the accuracy(further) of regression & classification models to 98% by using ensemble methods</li>
+                                </ul>
+                                <div class="project-stack">
+                                    <span><b>Libraries - </b>Linear Regression, Logistic Regression, KNN, Bagging, Boosting</span>
+                                </div>
+                                <div class="source-code">
+                                    <a href="https://colab.research.google.com/drive/1qzWO9qJMSVZaADwwlpi1nfQvVKQWctYl?usp=sharing" target="_blank"><button class="repo">Google Colab</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <h4 class="project-title">ACTIVITY RECOGNITION - ML(Supercomputer)</h4>
+                            <div class="project-image">
+                                <img src="img/supercomputer.png" alt="MySQL">
+                            </div>
+                            <div class="project-description">
+                                <ul class="project-keypoints">
+                                    <li>Performed Multi-Class Classification using various models on the Activity Recognition Dataset</li>
+                                    <li>Used NMSU HPC Cluster to run the models which reduced the running time from hours to mere minutes</li>
+                                </ul>
+                                <div class="project-stack">
+                                    <span><b>Technologies - </b>Slurm, Bash, Regression & Classification algorithms, Ensemble approaches</span>
+                                </div>
+                                <div class="source-code">
+                                    <a href="https://hpc.nmsu.edu/home/" target="_blank"><button class="repo">NMSU SuperComputer URL</button></a>
+                                </div>
+                            </div>
+                        </div>
+                       </div> 
+                    <div class="row">
+                        <div class="column">
+                            <h4 class="project-title">DataBase - MySQL</h4>
+                            <div class="project-image">
+                                <img src="img/mysql.png" alt="MySQL">
+                            </div>
+                            <div class="project-description">
+                                <ul class="project-keypoints">
+                                    <li>Developed a simple web GUI to insert 100k, 200k records into MySQL using Single Insertion, Bulk Loading</li>
+                                    <li>Improved the insertion time from 4.5 minutes to mere seconds using Bulk Insertion</li>
+                                </ul>
+                                <div class="project-stack">
+                                    <span><b>Technologies- </b>HTML5, CSS3, JavaScript, Node Js, MySQL, Express, Multer</span>
+                                </div>
+                                <div class="source-code">
+                                    <a href="https://github.com/chidcrushev/mysql-insertion-techniques" target="_blank"><button class="repo">Source Code</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <h4 class="project-title">MySQL Vs PostgreSQL</h4>
+                            <div class="project-image">
+                                <img src="img/mysql-postgresql.png" alt="MySQL Vs PostgreSQL">
+                            </div>
+                            <div class="project-description">
+                                <ul class="project-keypoints">
+                                    <li>Compared the execution time on MySQL and PostgreSQL system on a large database
+                                    </li>
+                                    <li> Improved the execution time on the PostgreSQL system significantly by building appropriate index structures like hash index, B-Tree index, etc</li>
+                                </ul>
+                                <div class="project-stack">
+                                    <span><b>Technologies - </b>MySQL, PostgreSQL</span>
+                                </div>
+                                <div class="source-code">
+                                    <a href="https://docs.google.com/presentation/d/1lPLBuPXQ9ug7jdYvECXmCFJRQnTPX0TmKN0oaSJs3ZY/edit?usp=sharing" target="_blank"><button class="repo">Presentation Slides</button></a>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <!-- <div class="row">
+                        <div class="column">
+                            <h4 class="project-title">Shiny</h4>
+                            <div class="project-image">
+                                <img src="img/r-shiny.png" alt="R Shiny">
+                            </div>
+                            <div class="project-description"> 
+                                <ul class="project-keypoints">
+                                    <li>Visualized the dataset of NBA basketball players using R Shiny Framework
+                                    <li> Compared the minutes played, Salary, Points, and FreeThrows between two players in the dataset</li>
+                                </ul>
+                                <div class="project-stack">
+                                    <span><b>Technologies - </b>R Programming, Shiny, ggplots, geompoint</span>
+                                </div>
+                                <div class="source-code">
+                                    <a href="https://github.com/chidcrushev/RShiny" target="_blank"><button class="repo">Github Code</button></a>
+                                </div>
+                            </div>
+                        </div>
+                      </div> -->
+                </section>
+            </main>
+        </div>
+    </div>
+    <footer class="footer-container">
+        <div class="footer-text">
+            © 2021 Chidambaram Crushev
+        </div>
+    </footer>
+</body>
+</html>

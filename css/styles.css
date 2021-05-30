@@ -1,0 +1,732 @@
+/* Generic CSS - Applied to all pages */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Google Sans", "Helvetica Neue", sans-serif;
+    outline: none;
+    background: var(--background-color);
+    color: var(--color);
+}
+
+html {
+    --background-color: #fff;
+    --color: #5f6368;
+    --link-color: #247ae6;
+    --link-responsive-color: #868686;
+    --link-hover-color: rgb(252, 252, 252);
+    --border-color: #e7e7e7;
+    --skills-color: #5f6368;
+    --border-profile-container: 0.5px solid #f1f1f1;
+    --link-background-responsive-color: rgb(212, 212, 212);
+    --border-project-column: #e7e7e7;
+    --skills-topleft-color: rgb(238, 253, 251);
+    --skills-topright-color: rgb(253, 239, 246);
+    --skills-bottomleft-color: rgb(255, 243, 240);
+    --skills-bottomright-color: rgb(231, 239, 255);
+}
+
+.dark {
+    --background-color: rgb(26, 26, 26);
+    --color: #9c9c9c;
+    --link-color: #3f9cf3;
+    --border-color: #2c2c2c;
+    --link-responsive-color: #313131;
+    --link-background-responsive-color: rgb(214, 214, 214);
+    --link-hover-color: rgb(252, 252, 252);
+    --border-profile-container: none;
+    --border-project-column: #2c2c2c;
+    --skills-color: #2c2c2c;
+    ;
+    --skills-topleft-color: rgb(212, 252, 245);
+    --skills-topright-color: rgb(253, 207, 230);
+    --skills-bottomleft-color: rgb(253, 196, 131);
+    --skills-bottomright-color: rgb(172, 187, 218);
+}
+
+.body {
+    min-height: calc(100vh - 65px);
+}
+
+.navbar-items2 ul {
+    display: flex;
+}
+
+.header-container {
+    width: 100%;
+    height: 65px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+
+.navbar-container {
+    height: 100%;
+    position: relative;
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.navbar-items1 {
+    flex: 1;
+    padding: 20px;
+    font-weight: 600;
+}
+
+.navbar-items2 {
+    flex: 4;
+    justify-content: flex-end;
+    font-size: 0.967rem;
+    display: flex;
+    font-weight: 600;
+}
+
+.items a {
+    border-radius: 20px;
+    border: 1px solid transparent;
+    padding-left: 10px;
+}
+
+.items {
+    padding: 20px;
+    margin: 0 5px;
+}
+
+.navbar-items1 img {
+    width: 50px;
+}
+
+.navbar-items3 {
+    cursor: pointer;
+}
+
+.items:hover {
+    cursor: pointer;
+    border-bottom: 2px solid var(--link-color);
+}
+
+.items.is-active {
+    color: var(--link-color);
+    border-bottom: 2px solid var(--link-color);
+}
+
+.items.is-active .material-icons {
+    color: var(--link-color);
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    vertical-align: middle;
+}
+
+.material-icons.dark-mode {
+    padding: 20px;
+    margin: 0 5px;
+}
+
+.footer-container {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    font-size: 0.85rem;
+    margin: auto;
+    text-align: center;
+    padding-top: 15px;
+}
+
+
+.dark-button,
+.light-button,
+.menu-button,
+.close-button {
+    background: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.close-button .material-icons {
+    font-size: 15px;
+    padding: 5px;
+}
+
+
+/* Generic CSS - Applied to all pages */
+
+
+/* Index page specific css */
+
+.profile-container {
+    display: flex;
+    margin: 5% 25%;
+    border: var(--border-profile-container);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.profile-photo {
+    flex: 20%;
+}
+
+.profile-information {
+    flex: 80%;
+    margin-left: 5%;
+}
+
+.profile-photo img {
+    border-radius: 10px;
+}
+
+.profile-container .content {
+    margin-top: 20px;
+    padding: 20px 0;
+    line-height: 1.7rem;
+    text-align: justify;
+    border-top: 1px solid var(--border-color);
+}
+
+/* Index page specific css */
+
+
+/* Project page CSS */
+
+.project-container {
+    width: 90%;
+    margin: auto;    
+    padding: 30px;
+}
+
+.project-container h4 {
+    text-align: center;
+    line-height: 1.7rem;
+}
+
+.project-container .main-header {
+    margin-bottom: 3%;
+}
+
+.project-container .row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.project-container .column {
+    border: 0.5px solid var(--border-project-column);
+    flex: 50%;
+    border-radius: 10px;
+    overflow: auto;
+    font-size: 0.95rem;
+    max-width: 475px;
+}
+
+.project-container .project-image img {
+    display: block;
+    width: 100%;
+}
+
+.project-container .project-image {
+    border-bottom: 1px solid var(--border-project-column);
+}
+
+.project-container .project-title {
+    padding: 15px;
+    border-bottom: 1px solid var(--border-project-column);
+    text-align: center;
+}
+
+.project-container .project-keypoints {
+    padding: 20px;
+    width: 100%;
+    text-align: justify;
+    line-height: 1.7rem;
+}
+
+.project-container .project-stack {
+    padding: 0 20px;
+    width: 100%;
+    text-align: justify;
+    line-height: 1.7rem;
+}
+
+.source-code {
+    padding: 20px;
+}
+
+.repo {
+    outline: none;
+    padding: 10px;
+    border: 0.5px solid var(--border-color);
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.project-container .row:not(:nth-child(2)){
+    margin-top: 3%;
+}
+
+/* Project page CSS */
+
+
+/* Hobbies page CSS */
+
+
+.hobbies-container {
+    margin: 0 25%;
+    padding: 30px;
+}
+
+.hobbies-container h4 {
+    text-align: center;
+    line-height: 4rem;
+}
+
+.hobbies-container .row {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.hobbies-container .row .column-image {
+    flex: 20%;
+}
+
+.hobbies-container .row .column-description {
+    flex: 80%;
+}
+
+.hobbies-container .hobbies-header {
+    text-align: left;
+    line-height: 2.0rem !important;
+    padding: 0 20px;
+}
+
+.hobbies-container .hobbies-description {
+    padding: 0 20px;
+    line-height: 1.7rem;
+    text-align: justify;
+}
+
+.hobbies-container .column-image img {
+    width: 200px;
+}
+
+
+/* Hobbies page CSS */
+
+
+/* Contact page CSS */
+
+.contact-container {
+    padding: 30px;
+    display: flex;
+    line-height: 4rem;
+    flex-direction: column;
+}
+
+.contact-container .message-container {
+    flex: 100%;
+}
+
+.contact-container .social-media-container {
+    flex: 100%;
+}
+
+.contact-container h4 {
+    text-align: center;
+}
+
+.contact-container form {
+    margin: 0 30%;
+}
+
+.form-buttons {
+    text-align: center;
+    width: 100%;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    outline: none;
+    padding: 10px;
+    border: 0.5px solid var(--border-color);
+    outline: none;
+    border-radius: 20px;
+    margin: 0 2%;
+    letter-spacing: 0.05rem;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    border: none;
+    border-bottom: 0.5px solid var(--border-color);
+    width: 70%;
+    margin-left: 5%;
+    padding: 10px;
+}
+
+#textarea {
+    margin-top: 5%;
+    margin-left: 12%;
+    padding: 10px;
+    border: 0.5px solid var(--border-color);
+    width: 70%;
+}
+
+.social-media-text,
+.social-media-links,
+.email,
+.location {
+    text-align: center;
+}
+
+.contact-container img {
+    width: 24px;
+    margin: 10px;
+}
+
+/* Contact page CSS */
+
+
+/*Skills page CSS */
+
+.skillset-container {
+    margin: 0 5%;
+    padding: 30px;
+    color: var(--skills-color);
+}
+
+
+
+.sub-header1,
+.sub-header2 {
+    background: inherit;
+    padding: 10px;
+}
+
+.skills-description-proficient,
+.skills-description-exposure {
+    background: inherit;
+    padding: 3px 10px 10px 10px;
+}
+
+.learning-skills {
+    line-height: 2.5rem;
+    text-align: left;
+}
+
+.dark .sub-header1,
+.dark .sub-header2,
+.dark .skills-description-proficient,
+.dark .skills-description-exposure {
+    color: var(--skills-color);
+}
+
+.skills-description-proficient,
+.skills-description-exposure {
+    line-height: 1.7rem;
+    font-size: 0.95rem;
+}
+
+.skillset-container .main-header,
+.skillset-container .sub-header {
+    text-align: center;
+    line-height: 4rem;
+}
+
+.sections {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+}
+
+.first-section .row, .second-section .row{
+    display: flex;
+}
+
+.first-section, .second-section {
+    flex: 50%;
+}
+
+.second-section .row {
+    width: 100%;
+    height: 100%;
+}
+
+.second-section {
+    border:1px solid var(--border-color)
+}
+
+
+.first-section .row .column {
+    flex: 50%;
+    padding: 10px;
+}
+
+.second-section .row .column {
+    padding: 0 10px;
+    margin: auto;
+}
+
+
+#column1 {
+    background: var(--skills-topleft-color);
+}
+
+#column2 {
+    background: var(--skills-topright-color);
+}
+
+#column3 {
+    background: var(--skills-bottomleft-color);
+}
+
+#column4 {
+    background: var(--skills-bottomright-color);
+}
+
+/* Skills page CSS */
+
+/* Media Queries */
+
+@media screen and (min-width: 1024px) {
+    .project-container .row {
+        flex-direction: row;
+        /* margin-bottom: 3%; */
+    }
+
+    .navbar-items3,
+    .close-button {
+        display: none;
+    }
+
+    .navbar-items2 {
+        display: flex;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1023.5px) {
+
+    .navbar-items1 {
+        text-align: center;
+    }
+
+    .navbar-container .navbar-items2 {
+        position: absolute;
+        top: 100px;
+        display: none;
+
+    }
+
+    .navbar-items3 {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 15px
+    }
+
+    .navbar-items2 .items {
+        display: block;
+        border-radius: 0 10px;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+
+    .navbar-container .navbar-items2.responsive-dropdown {
+        display: block !important;
+        position: fixed;
+        height: 100%;
+        width: 50%;
+        right: 0px;
+        top: 0px;
+        z-index: 1000;
+        border: 0.5px solid var(--border-project-column);
+    }
+
+    .dark-button,
+    .light-button {
+        width: 100%;
+        margin: auto;
+        padding-right: 40%;
+    }
+
+    .dark-button .material-icons,
+    .light-button .material-icons {
+        margin-left: 50%;
+    }
+
+    .items:hover {
+        cursor: pointer;
+        color: var(--link-hover-color);
+    }
+
+    .items.is-active {
+        color: var(--link-responsive-color);
+        background: var(--link-background-responsive-color);
+        border-bottom: none;
+    }
+
+    .items.is-active .material-icons {
+        color: var(--link-responsive-color);
+        background: var(--link-background-responsive-color);
+    }
+
+    .close-button {
+        display: block;
+    }
+
+
+    .hobbies-container {
+        margin: 0 20%;
+    }
+}
+
+@media screen and (min-width: 1250px){
+    .project-container .row .column:first-child{
+        margin-left:5%
+    }
+    
+    .project-container .row .column:nth-child(2){
+        margin-right: 5%;
+    }
+
+}
+
+@media screen and (max-width: 1250px) {
+    .project-container .row {
+        flex-direction: column;
+    }
+
+    .project-container .row .column {
+        margin: auto;
+    }
+
+    .project-container .row .column:nth-child(2){
+        margin-top: 3%;
+    }
+
+}
+
+@media screen and (max-width: 1500px) {
+
+    .profile-container, .hobbies-container .row {
+        flex-direction: column;
+    }
+
+    .profile-container .profile-photo{
+        flex: 100%;
+        margin: 6% auto 0 auto;
+    }
+
+    .hobbies-container .column-image {
+        margin: 0 auto;
+    }
+
+    .hobbies-container .column-description {
+        margin: 5%;
+    }
+
+    .hobbies-container .hobbies-description {
+        margin: 10px;
+    }
+
+    .hobbies-container .hobbies-header {
+        text-align: center;
+    }
+
+    .profile-container .profile-information {
+        margin: 5% 0 0 0;
+    }
+
+    .profile-header {
+        text-align: center;
+    }
+
+    .profile-container {
+        border: none;
+    }
+
+
+
+    /* Project Container */
+    .sections {
+        flex-direction: column;
+    }
+
+    .sections .second-section .row{
+        padding: 20px;
+    }
+
+    /* Project Container */
+
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+    .profile-container {
+        margin: 5% 20%
+    }
+
+    .hobbies-container {
+        margin: 0 15%;
+    }
+
+    .first-section .row, .second-section .row {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .profile-container {
+        margin: 5% 15.5%;
+    }
+
+    .hobbies-container {
+        margin: 0;
+    }
+
+    .hobbies-container .column-description {
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .profile-container {
+        margin: 5% 5%;
+    }
+
+}
