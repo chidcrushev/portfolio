@@ -222,12 +222,12 @@ a {
 }
 
 .project-container .main-header {
-    margin-bottom: 2.5%
+    margin-bottom: 25px;
 }
 
 .project-time {
     text-align: center;
-    margin: 2% 0;
+    margin: 25px 0;
 }
 
 .project-description {
