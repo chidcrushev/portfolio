@@ -210,9 +210,10 @@ a {
 /* Project page CSS */
 
 .project-container {
-    width: 90%;
+    width: 100%;
     margin: auto;    
     padding: 30px;
+    line-height: 2.5rem;
 }
 
 .project-container h4 {
@@ -221,14 +222,37 @@ a {
 }
 
 .project-container .main-header {
-    margin-bottom: 3%;
+    margin-bottom: 2.5%
 }
 
-.project-container .row {
-    display: flex;
-    justify-content: space-evenly;
+.project-time {
+    text-align: center;
+    margin: 2% 0;
 }
 
+.project-description {
+    border-top: 1px solid var(--border-color);
+    width: 700px;
+}
+
+.project-content {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.source-code {
+    padding: 10px 0;
+}
+
+.technologies {
+    list-style-type: none;
+}
+
+.project-description {
+    text-align: left;
+    display: inline-block;
+}
 
 
 .project-container .column {
@@ -255,22 +279,10 @@ a {
     text-align: center;
 }
 
-.project-container .project-keypoints {
-    padding: 20px;
-    width: 100%;
-    text-align: justify;
-    line-height: 1.7rem;
-}
-
-.project-container .project-stack {
-    padding: 0 20px;
-    width: 100%;
-    text-align: justify;
-    line-height: 1.7rem;
-}
 
 .source-code {
-    padding: 20px;
+    text-align: left;
+    display: inline-block;
 }
 
 .repo {
@@ -719,6 +731,14 @@ input[type="text"] {
     .hobbies-container .column-description {
         margin: 0;
         padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+
+    .project-description {
+        width: 100%;
     }
 
 }
